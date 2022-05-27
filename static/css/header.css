@@ -1,0 +1,32 @@
+.inner {
+    width: 100%;
+}
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 50px;
+    -webkit-transition-duration: 0.4s;
+    -webkit-transition-timing-function: ease;
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+    background: none;
+}
+header .logo_top {
+    font-size: 40px;
+    line-height: 1em;
+    font-weight: bold;
+}
+header:after {
+    display: block;
+    width: 100%;
+    content: "";
+}
+.down {
+    background-color: rgba(0,0,0,.8);
+    -webkit-transition-duration: 0.4s;
+    -webkit-transition-timing-function: ease;
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+}
