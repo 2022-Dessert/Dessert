@@ -13,6 +13,8 @@ $(function(){
         $header.toggleClass('down', scrolled); //클래스 토글
     });
 
-    $(".title").slideDown("slow");
+    $(document).ready( function() {
+        $("header").load("header.html");	//~이렇게 한줄만 해주면 알아서 contents에 testContents.html파일을 넣어 준다.
+    });
 });
 
