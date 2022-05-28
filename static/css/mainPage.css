@@ -2,7 +2,6 @@
     font-size: 30px;
 }
 .title{
-    text-align: center;
     position: absolute;
     top: 200px;
     left: 500px;
@@ -28,4 +27,53 @@ body {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+}
+.body{
+    background-color: #F9F8EA;
+    text-align: center;
+}
+.box{
+    padding: 100px;
+    background-color: white;
+    margin-top: 100px;
+    margin-left: 300px;
+    width: 1000px;
+    height: 500px;
+}
+
+.bg-1 {
+    margin-top: 50px;
+}
+.col-1{
+    padding-top: 170px;
+    padding-bottom: 100px;
+}
+.col-2{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.input_field{
+    margin-top: 10px;
+    width: 100%;
+}
+#comment{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 150px;
+}
+.first_wrap{
+    width: 760px;
+    height: 600px;
+    float: left;
+}
+.second_wrap{
+    width: 759px;
+    height: 600px;
+    float: right;
+}
+.mouseover_img{
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
 }

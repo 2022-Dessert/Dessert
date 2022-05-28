@@ -24,7 +24,7 @@ header:after {
     content: "";
 }
 .down {
-    background-color: rgba(0,0,0,.8);
+    background-color: rgb(98, 62, 39);
     -webkit-transition-duration: 0.4s;
     -webkit-transition-timing-function: ease;
     transition-duration: 0.4s;
