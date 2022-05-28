@@ -32,6 +32,8 @@ $(function(){
             $(this).css('color', '#F9F8EA');
         });
 
+
+        // table row 다 바뀌는거 수정하기,,,,,,
         $('.data').mouseover(function(){
             $(this && 'td').css('color', '#F9F8EA');
             $(this).css('backgroundColor','#684745');
@@ -73,8 +75,10 @@ $(document).ready(function(){
 	var num = $(".rolling li").length;
 	var max = height * num;
 	var move = 0;
+
 	function noticeRolling(){
 		move += height;
+
 		$(".rolling").animate({"top":-move},600,function(){
 			if( move >= max ){
 				$(this).css("top",0);
@@ -82,6 +86,7 @@ $(document).ready(function(){
 			};
 		});
 	};
+
 	noticeRollingOff = setInterval(noticeRolling,1500);
 	$(".rolling").append($(".rolling li").first().clone());
 
