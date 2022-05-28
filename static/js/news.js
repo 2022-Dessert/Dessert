@@ -27,6 +27,9 @@ $(function(){
         }
         else {
             $header.css('position','relative');
+            $header.css('background','none');
+            $('.header div nav div div ul li a').css('color', 'rgb(98, 62, 39)');
+            $('.header div nav div div a').css('color', 'rgb(98, 62, 39)');
         }
     });
     
