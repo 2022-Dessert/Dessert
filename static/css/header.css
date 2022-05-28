@@ -29,4 +29,5 @@ header:after {
     -webkit-transition-timing-function: ease;
     transition-duration: 0.4s;
     transition-timing-function: ease;
+    z-index: 1;
 }
