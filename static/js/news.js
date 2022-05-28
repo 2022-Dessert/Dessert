@@ -1,4 +1,5 @@
 $(function(){
+
     var $header = $('header'); //헤더를 변수에 넣기
     var $page = $('.page-start'); //색상이 변할 부분
     var $window = $(window);
@@ -16,11 +17,13 @@ $(function(){
 
     $window.on('scroll', function(){ //스크롤시
         var scrolled = $window.scrollTop() >= pageOffsetTop; //스크롤된 상태; true or false
+        
         $header.toggleClass('down', scrolled); //클래스 토글
         if(($header).hasClass('down') === true){
             $header.css('position','fixed');
-            $header.css('background-color','rgba(0,0,0,.8)');
-            
+            $header.css('background-color','rgb(98, 62, 39)');
+            $('.header div nav div div ul li a').css('color', '#F9F8EA');
+            $('.header div nav div div a').css('color', '#F9F8EA');
         }
         else {
             $header.css('position','relative');
@@ -28,10 +31,17 @@ $(function(){
     });
     
     $(document).ready(function(){
-        $('.title').slideDown(1200, function() {
-            $(this).css('color', '#F9F8EA');
+
+        $('#image').display = "block"; 
+
+        $('#image').fadeIn('slow', function() {
+            $('#image').toggleClass('.bg');
+            $header.toggleClass('down');
         });
 
+        $('.title').slideDown(1500, function() {
+            $(this).css('color', '#F9F8EA');
+        });
 
         // table row 다 바뀌는거 수정하기,,,,,,
         $('.data').mouseover(function(){
