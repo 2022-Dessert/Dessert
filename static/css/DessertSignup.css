@@ -1,0 +1,98 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #f9f8ea;
+}
+
+.loginbox {
+  width: 550px;
+  height: 850px;
+  margin: 5% auto;
+}
+
+.loginbox form {
+  text-align: left;
+  width: 100%;
+  height: 800px;
+  background-color: #fff;
+  padding: 60px;
+  box-sizing: border-box;
+}
+
+.loginbox input {
+  display: block;
+  padding-left: 5px;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 25px;
+  padding: 0 auto;
+  border-radius: 20px;
+}
+
+.loginbox a {
+  color: #333;
+  font-size: 12px;
+  position: relative;
+  top: -2px;
+}
+
+#LoginClick {
+  display: block;
+  width: 300px;
+  height: 50px;
+  margin: 0 auto;
+  border: none;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: black;
+  color: #fff;
+}
+
+#SignUp {
+  margin: 100px auto;
+  width: 100%;
+  height: 150px;
+  background-color: rgb(255, 255, 255);
+}
+
+#SignUp p {
+  margin: 0 auto;
+  padding: 30px;
+  font-size: 12px;
+}
+
+#bir_yy {
+  display: table-cell;
+  width: 147px;
+}
+#bir_mm {
+  display: table-cell;
+  width: 147px;
+  vertical-align: middle;
+}
+#bir_dd {
+  display: table-cell;
+  width: 147px;
+}
+#bir_mm,
+#bir_dd {
+  padding-left: 10px;
+}
+select {
+  width: 100%;
+  height: 29px;
+  font-size: 15px;
+  background: #fff;
+  background-size: 20px 8px;
+  display: inline-block;
+  text-align: start;
+  border: none;
+  cursor: default;
+}
