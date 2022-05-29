@@ -27,46 +27,40 @@ h2 { font-size: 50px;  font-weight: bolder; }
 
 a {  color: #37131E;  text-decoration: none; }
 li { list-style: none; }
+h3 {
+    display: block;
+    font-size: 1.17em;  font-weight: bold;
+    margin-top: 100px;  padding-bottom: 10px;
+}
 
 #Sub-header {
     position: absolute;
     width: 100%;  height: 60px;
 }
-
 #Sub-header .home-btn {
     float: left;         width: 60px;
     text-align: center;  line-height: 60px;
-    color: #37131E;    background-color: #F9F8EA;
+    color: rgb(98, 62, 39);    background-color: #F9F8EA;
 }
-
 .home-icon {
     font-style: normal;  font-size: 24px;
     line-height: 1;      text-transform: none;
 }
-
 #Sub-header li a {
     display: block;  
     width: 200px;        line-height: 60px;
     text-align: center;  text-decoration: none;
     font-size: 16px;     font-weight: bold;
 }
-
 #Sub-header li.on a {
-    background-color: #684745;   color: #F9F8EA;
+    background-color: rgb(98, 62, 39);   color: #F9F8EA;
 }
 
 #contentNews .content {
-    text-align: center;  color: #684745;  
+    text-align: center;  color: rgb(98, 62, 39);  
     font-size: 38px;     font-weight: 500;
     letter-spacing: -0.6px;
 }
-
-h3 {
-    display: block;
-    font-size: 1.17em;  font-weight: bold;
-    margin-top: 100px;  padding-bottom: 10pz;
-}
-
 #contentNews.content_css:after {
     position: absolute; left: 50%;
     content: "";
@@ -78,17 +72,12 @@ table {
     margin: 100px auto 100px auto;
     border-collapse: collapse; width: 70%;
   }
-  
-  td, th {
+td, th {
     border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
     padding: 20px;  color: #37131E;  text-align: center;
-  }
+}
 
-  ol, ul { list-style: none; }
-  blockquote, q { quotes: none; }
-  blockquote:before, blockquote:after,
-  q:before, q:after { content: ''; content: none; }
 .notice a { text-decoration: none; color:#684745;}
 .notice{
     width:50%;          height:50px; 
