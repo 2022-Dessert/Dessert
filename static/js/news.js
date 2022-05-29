@@ -1,12 +1,13 @@
 $(function(){
 
     var $header = $('header'); //헤더를 변수에 넣기
-    var $page = $('.page-start'); //색상이 변할 부분
+    var $page = $('#page-start'); //색상이 변할 부분
 
     var $window = $(window);
     var pageOffsetTop = $page.offset().top;//색상 변할 부분의 top값 구하기
     
     $header.css('background-color','#F9F8EA');
+    
     $('container').css('background-color','#F9F8EA');
     $('body').css('background-color','#F9F8EA');
 
@@ -16,6 +17,7 @@ $(function(){
     });
 
     $window.on('scroll', function(){ //스크롤시
+
         var scrolled = $window.scrollTop() >= pageOffsetTop; //스크롤된 상태; true or false
         
         $header.toggleClass('down', scrolled); //클래스 토글
