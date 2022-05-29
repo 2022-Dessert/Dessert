@@ -16,24 +16,31 @@
     transform: translateZ(0);
   }
 }
+header{
+  z-index: 1;
+}
 .title {
   display: none;
   animation: fadeInDown 1s;
   position: absolute;
   top: 200px;
   left: 500px;
+  z-index: 1;
 }
 .debon {
   font-size: 150px;
   margin-top: -30px;
 }
-.img_wrap {
+.img_wrap{
   width: 100%;
+  height: 1000px;
 }
-.img_wrap img {
-  display: block;
+.cycle-slideshow{
+  z-index: 0;
+}
+.cycle-slideshow img{
   width: 100%;
-  margin: 0;
+  opacity: 0.5;
 }
 body {
   margin: 0;
@@ -119,7 +126,6 @@ hr {
 }
 
 /* footer */
-
 .logo {
   font-size: 35px;
   letter-spacing: 5px;

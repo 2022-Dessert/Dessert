@@ -16,6 +16,7 @@
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="../static/js/jquery.cycle2.min.js"></script>
   </head>
   <body>
     <header></header>
@@ -27,8 +28,15 @@
         <h3>고품격 디저트 카페 드봉</h3>
       </div>
       <section class="img_wrap">
-        <img src="../static/src/background.png" alt="배경" />
+        <div class="cycle-slideshow">
+          <img src="../static/src/img1.png" alt="사진1">
+          <img src="../static/src/img2.jpg" alt="사진2">
+          <img src="../static/src/img3.jpg" alt="사진3">
+          <img src="../static/src/img4.jpg" alt="사진4">
+          <img src="../static/src/img5.jpg" alt="사진4">
+        </div>
       </section>
+
       <section class="page-start">
         <div class="box">
           <h3>GREETING</h3>
@@ -61,7 +69,7 @@
               </div>
               <img
                 class="mouseover_img"
-                src="../static/src/img2.png"
+                src="../static/src/img6.png"
                 alt="타르트"
               />
             </div>
@@ -83,7 +91,7 @@
               </div>
               <img
                 class="mouseover_img"
-                src="../static/src/img3.jpg"
+                src="../static/src/img7.jpg"
                 alt="케이크"
               />
             </div>
@@ -138,8 +146,9 @@
         </div>
       </section>
     </div>
+
     <footer>
-      <a href="index.html" class="logo">DE BON</a>
+      <a href="mainPage.html" class="logo">DE BON</a>
       <ul>
         <li><a href="#">드본소개</a></li>
         <li class="splitBar">|</li>
@@ -153,16 +162,15 @@
           사이버몰 내 판매되는 상품 중에는 드본에 등록한 개별 판매자가 판매하는 마켓플레이스(오픈마켓) 상품이 포함되어 있습니다.
           마켓플레이스(오픈마켓) 상품의 경우 드본은 통신판매중개자이며 통신판매의 당사자가 아닙니다.
           드본은 마켓플레이스(오픈마켓) 상품, 거래정보 및 거래 등에 대하여 책임을 지지 않습니다.
-          
+
           Copyright © 드본 All rights reserved.
-          </pre
-      >
+          </pre>
     </footer>
     <script src="../static/js/header.js"></script>
     <script src="../static/js/mainPage.js"></script>
     <script
       class="script_api"
-      src="https://maps.googleapis.com/maps/api/js?key={API_KEY}&callback=myMap"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDjgzOCwqS88xhlO2-TjIyeeBdvbxroh70&callback=myMap"
     ></script>
   </body>
 </html>
