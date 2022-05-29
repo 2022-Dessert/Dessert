@@ -20,7 +20,7 @@
 ```
 3. header 색깔 바뀌게 할 시작 지점에 section 태그 추가
 ```html
-    <section class="page-start">
+    <section id="page-start">
     내용
     </section>
 ```
