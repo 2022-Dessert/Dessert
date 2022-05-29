@@ -5,6 +5,7 @@
     <title>Dessert</title>
     <link rel="stylesheet" href="../static/css/mainPage.css" />
     <link rel="stylesheet" href="../static/css/header.css" />
+    <link rel="stylesheet" href="../static/css/footer.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
       rel="stylesheet"
@@ -16,6 +17,7 @@
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="../static/js/jquery.cycle2.min.js"></script>
   </head>
   <body>
     <header></header>
@@ -27,9 +29,20 @@
         <h3>고품격 디저트 카페 드봉</h3>
       </div>
       <section class="img_wrap">
-        <img src="../static/src/background.png" alt="배경" />
+        <div class="cycle-slideshow">
+          <img src="../static/src/img1.png" alt="사진1">
+          <img src="../static/src/img2.jpg" alt="사진2">
+          <img src="../static/src/img3.jpg" alt="사진3">
+          <img src="../static/src/img4.jpg" alt="사진4">
+          <img src="../static/src/img5.jpg" alt="사진4">
+        </div>
+        <a class="scroll_down" href="#page-start">
+          <p id="scroll">SCROLL DOWN</p><br>
+          <span class="glyphicon glyphicon-menu-down" style="color: black;"></span>
+        </a>
       </section>
-      <section class="page-start">
+
+      <section id="page-start">
         <div class="box">
           <h3>GREETING</h3>
           <h1>HANDMADE DESSERT SHOP</h1>
@@ -55,13 +68,13 @@
                 <p>DE BON</p>
                 <h1 style="margin-top: -5px">
                   DESSERT<br />
-                  CAFE
+                  TARTE
                 </h1>
                 <hr class="vertical_hr" />
               </div>
               <img
                 class="mouseover_img"
-                src="../static/src/img2.png"
+                src="../static/src/img6.png"
                 alt="타르트"
               />
             </div>
@@ -77,13 +90,13 @@
                 <p>DE BON</p>
                 <h1 style="margin-top: -5px">
                   DESSERT<br />
-                  CAFE
+                  CAKE
                 </h1>
                 <hr class="vertical_hr" />
               </div>
               <img
                 class="mouseover_img"
-                src="../static/src/img3.jpg"
+                src="../static/src/img7.jpg"
                 alt="케이크"
               />
             </div>
@@ -138,30 +151,15 @@
         </div>
       </section>
     </div>
-    <footer>
-      <a href="index.html" class="logo">DE BON</a>
-      <ul>
-        <li><a href="#">드본소개</a></li>
-        <li class="splitBar">|</li>
-        <li><a href="#">이용약관</a></li>
-        <li class="splitBar">|</li>
-        <li><a href="#">개인정보 처리방침</a></li>
-      </ul>
-      <pre>
-          드본 | 대표자 : 충북대 | 본사 : 서울특별시 성동구 뚝섬로1길 63, 영창디지털타워 11층 | 대표전화 : 1522 - 9774 | 팩스 : 02 - 540 - 2237
-          사업자번호 : 261 - 81 - 15766 | 드본 브레드 사업자번호 : 680 - 87 - 00452
-          사이버몰 내 판매되는 상품 중에는 드본에 등록한 개별 판매자가 판매하는 마켓플레이스(오픈마켓) 상품이 포함되어 있습니다.
-          마켓플레이스(오픈마켓) 상품의 경우 드본은 통신판매중개자이며 통신판매의 당사자가 아닙니다.
-          드본은 마켓플레이스(오픈마켓) 상품, 거래정보 및 거래 등에 대하여 책임을 지지 않습니다.
-          
-          Copyright © 드본 All rights reserved.
-          </pre>
-    </footer>
+
+    <footer></footer>
+
     <script src="../static/js/header.js"></script>
     <script src="../static/js/mainPage.js"></script>
+    <script src="../static/js/footer.js"></script>
     <script
       class="script_api"
-      src="https://maps.googleapis.com/maps/api/js?key={API_KEY}&callback=myMap"
+      src="https://maps.googleapis.com/maps/api/js?key={YOUR_KEY}&callback=myMap"
     ></script>
   </body>
 </html>

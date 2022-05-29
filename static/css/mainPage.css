@@ -1,5 +1,7 @@
 @import url(//fonts.googleapis.com/earlyaccess/kopubbatang.css);
-
+html {
+  scroll-behavior: smooth;
+}
 .kopubbatang * {
   font-family: "KoPub Batang", serif;
 }
@@ -16,24 +18,41 @@
     transform: translateZ(0);
   }
 }
+header{
+  z-index: 1;
+}
 .title {
   display: none;
   animation: fadeInDown 1s;
   position: absolute;
   top: 200px;
   left: 500px;
+  z-index: 1;
 }
 .debon {
   font-size: 150px;
   margin-top: -30px;
 }
-.img_wrap {
+.img_wrap{
   width: 100%;
+  height: 800px;
 }
-.img_wrap img {
-  display: block;
+.cycle-slideshow{
+  z-index: 0;
+}
+.cycle-slideshow img{
   width: 100%;
-  margin: 0;
+  opacity: 0.5;
+  height: 800px;
+}
+.scroll_down{
+  position: relative;
+  top: -200px;
+}
+#scroll{
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
 }
 body {
   margin: 0;
@@ -116,72 +135,4 @@ body {
 
 hr {
   height: 2px;
-}
-
-/* footer */
-
-.logo {
-  font-size: 35px;
-  letter-spacing: 5px;
-  position: absolute;
-  left: 35px;
-  top: 27px;
-  text-decoration: none;
-  /* color: white; */
-  color: #37131e;
-}
-
-footer {
-  position: relative;
-  background-color: #bfb1a4;
-}
-
-footer ul li {
-  position: absolute;
-  float: left;
-  list-style: none;
-  font-weight: bold;
-  margin-right: 1.5%;
-  top: 3.4vh;
-}
-
-footer .splitBar {
-  cursor: default;
-  position: absolute;
-  top: 3.3vh;
-  text-decoration: none;
-  color: #37131e;
-}
-
-footer ul li:nth-of-type(1) {
-  left: 15vw;
-}
-
-footer ul li:nth-of-type(2) {
-  left: 19.3vw;
-}
-
-footer ul li:nth-of-type(3) {
-  left: 20vw;
-}
-
-footer ul li:nth-of-type(4) {
-  left: 24.3vw;
-}
-
-footer ul li:nth-of-type(5) {
-  left: 25vw;
-}
-
-footer ul li a {
-  color: #37131e;
-  text-decoration: none;
-}
-
-footer pre {
-  position: absolute;
-  left: 15vw;
-  top: 7vh;
-  padding-right: 5vw;
-  /* color: #e0e0e0; */
 }
