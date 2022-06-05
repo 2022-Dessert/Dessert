@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dessert</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://raw.githubusercontent.com/tomma5o/touchMyRipple/master/dist/touchMyRipple.js"></script>
+   
+    <link rel="stylesheet" href="../static/css/custom.css"/>
+    <script src="../static/js/custom.js"></script>
+    <link rel="stylesheet" href="../static/css/header.css"/>
+    <script src="../static/js/header.js"></script>
+    <link rel="stylesheet" href="../static/css/footer.css"/>
+    <script src="../static/js/footer.js"></script>
+</head>
+<body>
+    <header></header>
+    <div id="content">
+        <div id="middleArea">
+            <div id="custom">
+                <div class="wrapper">
+                    <div class="circle"></div>
+                </div>
+            </div>
+            <div class="select">
+                <div class="check">
+                    <span>Sheet of Cake</span>
+                    <input type="radio" id="vanila" name="sheet"><label for="vanila">Vanila</label>
+                    <input type="radio" id="choco" name="sheet"><label for="choco">Choco</label>
+                </div>   
+                <div class="check">
+                    <span>Fruits</span>
+                    <input type="radio" id="fruit_y" name="fruit"><label for="fruit_y">O</label>
+                    <input type="radio" id="fruit_n" name="fruit"><label for="fruit_n">X</label>
+                </div> 
+                <div class="check">
+                    <span>Place of the fruit</span>
+                    <input type="radio" id="in" name="place"><label for="in">In</label>
+                    <input type="radio" id="out" name="place"><label for="out">Out</label>
+                    <input type="radio" id="both" name="place"><label for="both">Both</label>
+                </div>
+                <div class="check">
+                    <span>Lettering</span>
+                    <input type="radio" id="letter_y" name="letter"><label for="letter_y">O</label>
+                    <input type="radio" id="letter_n" name="letter"><label for="letter_n">X</label>
+                </div>
+                <textarea id="text"></textarea>
+                <div class="button">
+                    <button id="save" onclick="save()">Save</button>
+                    <button id="reset" onclick="reset()">Reset</button>
+                </div>
+            </div>
+        </div>
+        <section id="page-start">
+            <div class="fruits">
+                <div class="container">
+                    <table>
+                        <tr>
+                            <td>
+                                <img src="../static/src/cream.png">
+                            </td>
+                            <td>
+                                <img src="../static/src/whipped-cream.png">
+                            </td>
+                            <td>
+                                <img src="../static/src/strawberries.png">
+                            </td>
+                            <td>
+                                <img src="../static/src/grape.png">
+                            </td>
+                            <td>
+                                <img src="../static/src/orange.png">
+                            </td>
+                        </tr>
+                    </table>
+                    <!-- <img src="../static/src/grape.png">
+                    <img src="../static/src/strawberries.png">
+                    <img src="../static/src/orange.png">
+                    <img src="../static/src/whipped-cream.png"> -->
+                </div>
+            </div>
+        
+            <!-- <footer></footer> -->
+        </section>
+    </div>    
+</body>

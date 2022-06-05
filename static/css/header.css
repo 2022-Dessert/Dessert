@@ -1,3 +1,4 @@
+@import url(//fonts.googleapis.com/earlyaccess/kopubbatang.css);
 .inner {
     width: 100%;
 }
@@ -7,6 +8,7 @@ header {
     top: 0;
     left: 0;
     height: 50px;
+    font-family: 'KoPub Batang', serif; 
     -webkit-transition-duration: 0.4s;
     -webkit-transition-timing-function: ease;
     transition-duration: 0.4s;
