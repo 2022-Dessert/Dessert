@@ -4,10 +4,13 @@
     <meta charset="UTF-8" />
     <title>회원가입창</title>
     <link rel="stylesheet" href="../static/css/DessertSignup.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.8.18/themes/base/jquery-ui.css" type="text/css" />  
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>  
+    <script src="http://code.jquery.com/ui/1.8.18/jquery-ui.min.js"></script>
   </head>
   <body>
-    <div class="loginbox">
-      <form action="#">
+      <div class="loginbox">
+      <form id="loginForm">
         <!--그룹을 만들 수 있다. -->
         <div>
           <h2 style="text-align:center;">Signup</h2>
@@ -17,41 +20,48 @@
             type="text"
             id="loginid"
             placeholder="아이디 (E-mail)을 입력해 주세요"
+            required
             autofocus
+            maxlength=15
           />
           <label for="pswd1">비밀번호</label>
           <input
             type="password"
             id="loginpw"
             placeholder="비밀번호를 입력해 주세요"
-          />
+            required
+            maxlength=20
+            />
           <label for="pswd2">비밀번호 재확인</label>
           <input
             type="password"
             id="loginpw"
             placeholder="비밀번호를 입력해 주세요"
-          />
+            required
+            maxlength=20
+            />
           <label for="name">이름</label>
           <input 
           type="text" id="name" class="int" maxlength="20" 
           placeholder="이름을 입력해 주세요"
+          required
           />
           <label for="yy">생년월일</label>
-        
+          <input type="text" id="Date">
             <!-- BIRTH_YY -->
-            <div id="bir_yy">
+            <!-- <div id="bir_yy">
                 <input
                   type="text"
                   id="yy"
                   class="int"
                   maxlength="4"
                   placeholder="년(4자)"
+                  required
                 />
-        
-            </div>
+            </div> -->
 
             <!-- BIRTH_MM -->
-            <div id="bir_mm">
+            <!-- <div id="bir_mm">
                 <select id="mm" class="sel">
                   <option>월</option>
                   <option value="01">1</option>
@@ -67,25 +77,24 @@
                   <option value="11">11</option>
                   <option value="12">12</option>
                 </select>
-            </div>
+            </div> -->
             <!-- BIRTH_DD -->
-            <div id="bir_dd">
+            <!-- <div id="bir_dd">
                 <input
                   type="text"
                   id="dd"
                   class="int"
                   maxlength="2"
                   placeholder="일"
+                  required
                 />
-            </div>
+            </div> -->
           </div>
           <button id="LoginClick" type="submit">확인</button>
-
         </div>
-        </div>
-      
-
+        </div>   
       </form>
-    </div>
+    </div> 
+    <script src="../static/js/SignUp.js"></script>
   </body>
 </html>
