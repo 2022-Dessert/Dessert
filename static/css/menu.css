@@ -1,0 +1,240 @@
+@import url(//fonts.googleapis.com/earlyaccess/kopubbatang.css);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
+
+html {
+    scroll-behavior: smooth;
+}
+header, .body .wrap .title h1 { font-family: 'KoPub Batang', serif; }
+.img_wrap{
+    width: 100%;
+    height: 500px;
+    z-index: 0;
+    overflow: hidden;
+}
+.scale {
+    width: 100%;
+}
+body{
+    text-align: center;
+}
+.wrap2 {
+    margin-top: 50px;
+    height: 300px;
+}
+.first_wrap,
+.second_wrap {
+    width: 150px;
+    height: 150px;
+    float: left;
+    border: 1px solid black;
+}
+.first_wrap img{
+    width: 90px;
+    height: 90px;
+    padding-top: 15px;
+
+}
+.second_wrap img{
+    width: 100px;
+    height: 100px;
+}
+.first_wrap p, .second_wrap p{
+    padding-top: 10px;
+}
+.title {
+    position: absolute;
+    top: 350px;
+    left: 100px;
+    z-index: 1;
+    color: white;
+}
+.title h1{
+    font-size: 60px;
+}
+
+#wrap3{
+    width: 100%;
+    height: 500px;
+}
+.cake{
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+}
+.box{
+    position: absolute;
+    top: 950px;
+    left: 50px;
+    width: 350px;
+    height: 300px;
+    background-color: #37131E;
+    opacity: 0.7;
+    padding-top: 60px;
+    color: white;
+}
+#wrap4{
+    width: 100%;
+    height: 500px;
+}
+.tart{
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+}
+.box2{
+    position: absolute;
+    top: 2800px;
+    left: 50px;
+    width: 350px;
+    height: 300px;
+    background-color: #37131E;
+    opacity: 0.7;
+    padding-top: 60px;
+    color: white;
+}
+.body {
+    background-color: #f9f8ea;
+    text-align: center;
+}
+table {
+    width: 1300px;
+    table-layout:fixed;
+    margin-left: 150px;
+    margin-bottom: 120px;
+}
+table div{
+    text-align: center;
+    border: 1px solid black;
+}
+table div:hover{
+    border: 1px solid red;
+}
+.table_img{
+    width: 100%;
+    height: 210px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.table_box{
+    padding-bottom: 10px;
+    width: 260px;
+    height: 350px;
+    background-color: #f6f5f5;
+    margin-bottom: 50px;
+
+}
+.body {
+    background-color: #f9f8ea;
+    text-align: center;
+}
+
+figure.snip1200 {
+    font-family: 'Raleway', Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    min-width: 220px;
+    max-width: 310px;
+    height: 310px;
+    width: 100%;
+    background: #000000;
+    color: #ffffff;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    font-size: 16px;
+}
+figure.snip1200 * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.45s ease-in-out;
+    transition: all 0.45s ease-in-out;
+}
+figure.snip1200 img {
+    max-width: 100%;
+    height: 100%;
+    position: relative;
+    opacity: 0.9;
+}
+figure.snip1200 figcaption {
+    position: absolute;
+    top: 45%;
+    left: 7%;
+    right: 7%;
+    bottom: 45%;
+    border: 1px solid white;
+    border-width: 1px 1px 0;
+}
+figure.snip1200 .heading {
+    overflow: hidden;
+    -webkit-transform: translateY(50%);
+    transform: translateY(50%);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+figure.snip1200 h2 {
+    display: table;
+    margin: 0 auto;
+    padding: 0 10px;
+    position: relative;
+    text-align: center;
+    width: auto;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+figure.snip1200 h2 span {
+    font-weight: 800;
+}
+figure.snip1200 h2:before,
+figure.snip1200 h2:after {
+    position: absolute;
+    display: block;
+    width: 1000%;
+    height: 1px;
+    content: '';
+    background: white;
+    top: 50%;
+}
+figure.snip1200 h2:before {
+    left: -1000%;
+}
+figure.snip1200 h2:after {
+    right: -1000%;
+}
+figure.snip1200 p {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    position: absolute;
+    width: 100%;
+    padding: 0 20px;
+    margin: 0;
+    opacity: 0;
+    line-height: 1.6em;
+    font-size: 0.9em;
+}
+figure.snip1200 a {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: 1;
+}
+figure.snip1200:hover img,
+figure.snip1200.hover img {
+    opacity: 0.25;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+figure.snip1200:hover figcaption,
+figure.snip1200.hover figcaption {
+    top: 7%;
+    bottom: 7%;
+}
+figure.snip1200:hover p,
+figure.snip1200.hover p {
+    opacity: 1;
+    -webkit-transition-delay: 0.35s;
+    transition-delay: 0.35s;
+}
