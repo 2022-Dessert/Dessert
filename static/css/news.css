@@ -3,9 +3,8 @@
     0% { opacity: 0; transform: translate3d(0, -100%, 0); }
     to { opacity: 1; transform: translateZ(0); }
 }
-header, h2 { font-family: 'KoPub Batang', serif; }
 header { position: relative;}
-h2 { font-size: 50px;  font-weight: bolder; }
+h2 { font-size: 50px;  font-weight: bolder; font-family: 'KoPub Batang', serif;}
 .title{
     display: none;  position: absolute;
     top: 400px;     left: 50px;

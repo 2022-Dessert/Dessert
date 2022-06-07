@@ -1,0 +1,81 @@
+@import url(//fonts.googleapis.com/earlyaccess/kopubbatang.css);
+body { background-color: #F9F8EA; font-family: 'KoPub Batang', serif;}
+#middleArea { display: flex; }
+#custom { 
+    width: 350px; height: 350px; 
+    margin: 200px auto 100px 400px; 
+    background-color: white; border: 1px solid rgb(98, 62, 39);
+}
+.circle {
+    margin: 0 auto;
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+.wrapper {
+    margin: 0 auto;
+    padding: 25px;
+    max-width: 1170px;
+}
+.select {
+    width: 60%;
+    margin: 200px auto 100px 200px; 
+
+}
+
+span {
+    margin-right: 10px;
+    height: 24px;
+    width: 90px;}
+
+.check {
+    padding: 15px 10px;
+}
+.check input[type=radio]{
+    display: none;
+}
+.check input[type=radio]+label{
+    display: inline-block;
+    cursor: pointer;
+    height: 24px;
+    width: 90px;
+    border: 1px solid #dfdfdf;
+    line-height: 24px;
+    text-align: center;
+    font-weight:bold;
+    font-size:13px;
+    margin: 10px;
+}
+.check input[type=radio]+label{
+    background-color: #fff;
+    color: #333;
+}
+.check input[type=radio]:checked+label{
+    background-color: #333;
+    color: #fff;
+}
+textarea {
+    margin: 10px;
+    width: 300px;
+    height: 50px;
+}
+
+button {
+    margin: 10px 30px auto 30px;
+}
+
+.fruits {
+    position: relative;
+}
+
+.container {
+    position: absolute;
+    width: 800px;
+    height: 400px;
+}
+
+.container img {
+    position: absolute;
+    width: 70px;
+}
