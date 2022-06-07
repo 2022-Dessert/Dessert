@@ -1,0 +1,7 @@
+{
+  "name": "openWebProject",
+  "version": "1.0.0",
+  "dependencies": {
+    "direction-reveal": "^2.0.2"
+  }
+}
