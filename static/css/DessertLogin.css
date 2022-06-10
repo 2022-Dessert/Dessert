@@ -60,7 +60,7 @@ body {
 }
 
 #LoginClick {
-  display: block;
+  display: inline-block;
   width: 300px;
   height: 50px;
   margin: 0 auto;
@@ -69,6 +69,7 @@ body {
   font-weight: bold;
   background-color: black;
   color: #fff;
+  display: inline-block;
 }
 
 #SignUp {
@@ -76,10 +77,54 @@ body {
   width: 100%;
   height: 150px;
   background-color: rgb(255, 255, 255);
+  border: solid;
+  border-color: rgb(215, 215, 215);
+  border-width: 0.5px;
 }
 
 #SignUp p {
   margin: 0 auto;
   padding: 30px;
   font-size: 12px;
+}
+
+#SignUp button {
+  padding: 10px 20px;
+  background-color: white;
+  font-weight: bold;
+  color: black;
+  position: relative;
+  display: inline-block;
+  letter-spacing: 0;
+  -webkit-transition: all 0.28s ease-in-out;
+  transition: all 0.28s ease-in-out;
+}
+
+#SignUp button:hover,
+#SignUp button:focus,
+#SignUp button:active {
+  letter-spacing: 5px;
+}
+#SignUp button:after,
+#SignUp button:before {
+  border: 1px solid rgba(255, 255, 255, 0);
+  bottom: 0;
+  content: " ";
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  -webkit-transition: all 0.28s ease-in-out;
+  transition: all 0.28s ease-in-out;
+  width: 0;
+}
+#SignUp button:hover:after,
+#SignUp button:hover:before {
+  border-color: #fff;
+  -webkit-transition: width 350ms ease-in-out;
+  transition: width 350ms ease-in-out;
+  width: 70%;
+}
+#SignUp button:hover:before {
+  bottom: auto;
+  top: 0;
 }
