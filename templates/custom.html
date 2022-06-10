@@ -32,6 +32,11 @@
                     <span>Sheet of Cake</span>
                     <input type="radio" id="vanila" name="sheet"><label for="vanila">Vanila</label>
                     <input type="radio" id="choco" name="sheet"><label for="choco">Choco</label>
+                </div>
+                <div class="check">
+                    <span>Size of Cake</span>
+                    <input type="radio" id="middle" name="size"><label for="middle">中</label>
+                    <input type="radio" id="large" name="size"><label for="large">大</label>
                 </div>   
                 <div class="check">
                     <span>Fruits</span>
@@ -49,7 +54,7 @@
                     <input type="radio" id="letter_y" name="letter"><label for="letter_y">O</label>
                     <input type="radio" id="letter_n" name="letter"><label for="letter_n">X</label>
                 </div>
-                <textarea id="text"></textarea>
+                <textarea id="text" placeholder="중 사이즈는 10자 이내 대는 15자 이내로 가능합니다. :)"></textarea>
                 <div class="button">
                     <button id="save" onclick="save()">Save</button>
                     <button id="reset" onclick="reset()">Reset</button>
@@ -58,34 +63,42 @@
         </div>
         <section id="page-start">
             <div class="fruits">
-                <div class="container">
-                    <table>
-                        <tr>
-                            <td>
-                                <img src="../static/src/cream.png">
-                            </td>
-                            <td>
-                                <img src="../static/src/whipped-cream.png">
-                            </td>
-                            <td>
-                                <img src="../static/src/strawberries.png">
-                            </td>
-                            <td>
-                                <img src="../static/src/grape.png">
-                            </td>
-                            <td>
-                                <img src="../static/src/orange.png">
-                            </td>
-                        </tr>
-                    </table>
-                    <!-- <img src="../static/src/grape.png">
-                    <img src="../static/src/strawberries.png">
-                    <img src="../static/src/orange.png">
-                    <img src="../static/src/whipped-cream.png"> -->
+                <div class="container-fluid text-center bg-3">
+                    <div class="row">
+                        <div class="col-sm-1">
+                            <img src="../static/src/cream.png" style="position:absolute; left:0px; top:50px; width:50px; cursor:pointer; cursor:hand" onmousedown="startDrag(event, this)" onclick="CreateImage('cream', this)">
+                        </div>
+                        <div class="col-sm-1">
+                            <img src="../static/src/whipped-cream.png" style="position:absolute; left:0px; top:50px; width:50px; cursor:pointer; cursor:hand" onmousedown="startDrag(event, this)" onclick="CreateImage('whipped-cream', this)" >
+                        </div>
+                        <div class="col-sm-1">
+                            <img src="../static/src/grape.png" style="position:absolute; left:0px; top:50px; cursor:pointer; cursor:hand; width:50px;" onmousedown="startDrag(event, this)" onclick="CreateImage('grape', this)">
+                        </div>
+                        <div class="col-sm-1">
+                            <img src="../static/src/strawberries.png" style="position:absolute; left:0px; top:50px; width:50px; cursor:pointer; cursor:hand" onmousedown="startDrag(event, this)" onclick="CreateImage('strawberries', this)">
+                        </div>
+                        <div class="col-sm-1">
+                            <img src="../static/src/orange.png" style="position:absolute; left:0px; top:50px; width:50px; cursor:pointer; cursor:hand" onmousedown="startDrag(event, this)" onclick="CreateImage('orange', this)">
+                        </div>
+                        <div class="col-sm-1">
+                            <img src="../static/src/pineapple.png" style="position:absolute; left:0px; top:50px; width:50px; cursor:pointer; cursor:hand" onmousedown="startDrag(event, this)" onclick="CreateImage('pineapple', this)">
+                        </div>
+                        <div class="col-sm-1">
+                            <img src="../static/src/kiwi.png" style="position:absolute; left:0px; top:50px; width:50px; cursor:pointer; cursor:hand" onmousedown="startDrag(event, this)" onclick="CreateImage('kiwi', this)">
+                        </div>                       
+                        <div class="col-sm-1">
+                            <img src="../static/src/redberry.png" style="position:absolute; left:0px; top:50px; width:50px; cursor:pointer; cursor:hand" onmousedown="startDrag(event, this)" onclick="CreateImage('redberry', this)">
+                        </div>
+                        <div class="col-sm-1">
+                            <img src="../static/src/blueberry.png" style="position:absolute; left:0px; top:50px; width:50px; cursor:pointer; cursor:hand" onmousedown="startDrag(event, this)" onclick="CreateImage('blueberry', this)">
+                        </div>
+                    </div>
                 </div>
             </div>
         
             <!-- <footer></footer> -->
         </section>
     </div>    
+
 </body>
+</html>

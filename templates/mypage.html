@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dessert</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://raw.githubusercontent.com/tomma5o/touchMyRipple/master/dist/touchMyRipple.js"></script>
+   
+    <link rel="stylesheet" href="../static/css/mypage.css"/>
+    <script src="../static/js/mypage.js"></script>
+    <link rel="stylesheet" href="../static/css/header.css"/>
+    <script src="../static/js/header.js"></script>
+    <link rel="stylesheet" href="../static/css/footer.css"/>
+    <script src="../static/js/footer.js"></script>
+</head>
+<body>
+    <header></header>
+    <div class="mypage">
+        <h3>진행 중인 주문</h3>
+        <span>최근 30일 내에 진행중인 주문정보입니다.</span>
+        <div class="order_info">
+            <ol>
+                <li><b>입금대기</b><strong>0</strong></li>
+                <li><b>결제완료</b><strong>0</strong></li>
+                <li><b>상품준비중</b><strong>0</strong></li>
+                <li><b>배송중</b><strong>0</strong></li>
+                <li><b>배송완료</b><strong>0</strong></li>
+                <li><b>구매확정</b><strong>0</strong></li>
+
+            </ol>
+        </div>
+
+        <div class="order_table">
+            <form>
+                <table>
+                    <colgroup>
+                    <!--   체크박스      상품명/옵션      수량                상품금액                                         할인/적립                                   합계금액                                            배송비 -->
+                    <col style="width:3%"><col><col style="width: 5%;"><col style="width:10%" class="nd-dphone-641"><col style="width:13%" class="nd-dphone-641"><col style="width:10%" class="nd-dphone-641"><col style="width:10%" class="nd-dphone-641">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th><div class="form_element"><input type="checkbox" id="allCheck1" class="gd_select_all_goods" data-target-id="cartSno1_" data-target-form="#frmCart" checked="checked"></div></th>
+                            <th>상품/옵션 정보</th>
+                            <th>수량</th>
+                            <th class="nd-dpnone-641">상품금액</th>
+                            <th class="nd-dpnone-641">할인/적립</th>
+                            <th class="nd-dpnone-641">합계금액</th>
+                            <th class="nd-dpnone-641">배송비</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><div class="form_element"><input type="checkbox"></div></td>
+                            <td>custom cake</td>
+                            <td class="order_amount"><strong>1개</strong></td>
+                            <td class="nd-dpnone-641">
+                                <strong class="order_sum-txt price">30,000원</strong>
+                                <p class="add_currency"></p>
+                            </td>
+                            <td class="nd-dpnone-641"><ul class="benefit"></ul></td>
+                            <td class="nd-dpnone-641">
+                                <strong class="order_sum-txt">3,000원</strong>
+                                <p class="add_currency"></p>
+                            </td>
+                            <td class="td_delivery nd-dpnone" rowspan="1">
+                                " 기본 - 금액별 배송비 "<br>
+                                " 2,500원 " <br>
+                                " (택배-선결제) "
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+
+        </div>
+    </div>
+    
+    
+</body>
