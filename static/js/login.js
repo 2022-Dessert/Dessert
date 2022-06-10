@@ -7,9 +7,9 @@ function loginchecking() {
   let id = document.getElementById("loginid");
   let pw = document.getElementById("loginpw");
 
-  if (id.value === "dessert" && pw.value === "seong") {
+  if (id.value === "dessert" && pw.value === "1") {
     alert("반갑습니다!");
-    window.location.href = "header.html";
+    window.location.href = "../../../Dessert/templates/mainPage.html";
   } else {
     alert("다시 시도해주세요!");
   }
