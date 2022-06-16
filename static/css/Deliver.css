@@ -1,0 +1,117 @@
+body {
+  background-color: #f9f8ea;
+}
+
+.container {
+  margin: 100px;
+}
+
+.asterisk {
+  color: red;
+  font-family: "KoPub Batang", serif;
+  font-weight: bold;
+  padding-left: 1.5px;
+}
+
+.leftAngle {
+  color: red;
+  font-family: "KoPub Batang", serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.showAddr,
+.postNum {
+  cursor: pointer;
+  background-color: white;
+  border: 1px solid #c9c9c9;
+  border-radius: 3px;
+}
+
+table,
+td {
+  border: 1px solid #e9e9e9;
+  border-collapse: collapse;
+  width: 100;
+}
+
+table > caption:nth-child(1) {
+  text-align: left;
+  margin: 10px 1.2vw;
+}
+
+table > caption:nth-child(2) {
+  text-align: right;
+}
+
+table tr:nth-child(1) {
+  height: 4.5px;
+}
+
+table tr:nth-child(2) {
+  height: 4.5px;
+}
+
+table tr:nth-child(4) {
+  height: 4.5px;
+}
+
+table tr:nth-child(3) td {
+  padding-bottom: 11px;
+}
+
+table tr:nth-child(5) td {
+  padding-top: 15px;
+}
+
+table tr:nth-child(6) td {
+  padding-top: 9px;
+}
+
+td {
+  padding-left: 10px;
+  color: grey;
+}
+
+table tr:nth-child(1) label:nth-child(2) {
+  margin-right: 30px;
+}
+
+.addr,
+.restAddr {
+  width: 500px;
+}
+
+.phone1,
+.phone2 {
+  width: 50px;
+}
+
+td:nth-child(1) {
+  background-color: rgb(195, 235, 150);
+}
+td:nth-child(2) {
+  padding-left: 9px;
+}
+
+table tr:nth-child(1) td:nth-child(1) {
+  width: -50px;
+}
+
+table tr:nth-child(3) input {
+  margin-top: 7px;
+}
+
+table tr:nth-child(3) input:nth-child(2) {
+  width: 500px;
+}
+
+textarea {
+  width: 900px;
+  height: 60px;
+}
+
+input[type="text"] {
+  border: 1px solid #c9c9c9;
+  padding: 4px;
+}
