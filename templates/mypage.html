@@ -20,18 +20,25 @@
 </head>
 <body>
     <header></header>
+    <section id="page-start"></section>
+
+    <h1>MY PAGE</h1>
     <div class="mypage">
-        <h3>진행 중인 주문</h3>
-        <span>최근 30일 내에 진행중인 주문정보입니다.</span>
+        <h3>Order Status</h3>
+        <span>This is the order information in progress within the last 30 days.</span>
         <div class="order_info">
             <ol>
-                <li><b>입금대기</b><strong>0</strong></li>
-                <li><b>결제완료</b><strong>0</strong></li>
-                <li><b>상품준비중</b><strong>0</strong></li>
-                <li><b>배송중</b><strong>0</strong></li>
-                <li><b>배송완료</b><strong>0</strong></li>
-                <li><b>구매확정</b><strong>0</strong></li>
-
+                <li><b>Checkout</b><strong>1</strong></li><!--입금대기-->
+                <li><img src="../static/src/right-arrow.png" style="width: 50px;" float="left"></li>
+                <li><b>Ordered</b><strong>0</strong></li><!--결제완료-->
+                <li><img src="../static/src/right-arrow.png" style="width: 50px;" float="left"></li>
+                <li><b>Processing</b><strong>0</strong></li><!--상품준비중-->
+                <li><img src="../static/src/right-arrow.png" style="width: 50px;" float="left"></li>
+                <li><b>Shipped</b><strong>0</strong></li><!--배송중-->
+                <li><img src="../static/src/right-arrow.png" style="width: 50px;" float="left"></li>
+                <li><b>Delivered</b><strong>0</strong></li><!--배송완료-->
+                <li><img src="../static/src/right-arrow.png" style="width: 50px;" float="left"></li>
+                <li><b>Complete</b><strong>3</strong></li><!--구매확정-->
             </ol>
         </div>
 
@@ -39,43 +46,50 @@
             <form>
                 <table>
                     <colgroup>
-                    <!--   체크박스      상품명/옵션      수량                상품금액                                         할인/적립                                   합계금액                                            배송비 -->
-                    <col style="width:3%"><col><col style="width: 5%;"><col style="width:10%" class="nd-dphone-641"><col style="width:13%" class="nd-dphone-641"><col style="width:10%" class="nd-dphone-641"><col style="width:10%" class="nd-dphone-641">
+                    <!--   체크박스            상품번호          상품명/옵션      수량                상품금액               할인/적립                    합계금액             배송비 -->
+                    <col style="width:3%"><col style="width: 10%;"><col><col style="width: 8%;"><col style="width:10%"><col style="width:10%"><col style="width:10%"><col style="width:15%">
                     </colgroup>
                     <thead>
                         <tr>
-                            <th><div class="form_element"><input type="checkbox" id="allCheck1" class="gd_select_all_goods" data-target-id="cartSno1_" data-target-form="#frmCart" checked="checked"></div></th>
-                            <th>상품/옵션 정보</th>
-                            <th>수량</th>
-                            <th class="nd-dpnone-641">상품금액</th>
-                            <th class="nd-dpnone-641">할인/적립</th>
-                            <th class="nd-dpnone-641">합계금액</th>
-                            <th class="nd-dpnone-641">배송비</th>
+                            <th><div><input id="all" type="checkbox" onclick="check_all()"></div></th>
+                            <th>Product No.</th><!--상품/옵션 정보-->
+                            <th>Product/Option information</th><!--상품/옵션 정보-->
+                            <th>Quantity</th><!--수량-->
+                            <th>Cost</th><!--상품금액-->
+                            <th>Sale/Collect</th><!--할인/적립-->
+                            <th>Total</th><!--합계금액-->
+                            <th>Shipping Fee</th><!--배송비-->
                         </tr>
                     </thead>
                     <tbody>
+                        <tr class="size">
+                            <td class="no_line"><div><input type="checkbox" class="check"></div></td>
+                            <td >17</td>
+                            <td>Custom cake</td>
+                            <td class="quantity">
+                                <img class="ch_num" src="../static/src/minus.png" onclick="Count('minus')">
+                                <span>&nbsp&nbsp</span><strong id="amount">1</strong><span>&nbsp&nbsp</span>
+                                <img class="ch_num" src="../static/src/plus.png" onclick="Count('plus')">
+                            </td>
+                            <td>
+                                <strong class="total">30</strong><span><strong>,000 ₩</strong></span>
+                            </td>
+                            <td class="option"></td>
+                            <td>
+                                <strong class="total">30</strong><span><strong>,000 ₩</strong></span>
+                            </td>
+                            <td class="ship" rowspan="1">
+                                3,000 ₩ <br>
+                                (Package-Advance)
+                            </td>
+                        </tr>
                         <tr>
-                            <td><div class="form_element"><input type="checkbox"></div></td>
-                            <td>custom cake</td>
-                            <td class="order_amount"><strong>1개</strong></td>
-                            <td class="nd-dpnone-641">
-                                <strong class="order_sum-txt price">30,000원</strong>
-                                <p class="add_currency"></p>
-                            </td>
-                            <td class="nd-dpnone-641"><ul class="benefit"></ul></td>
-                            <td class="nd-dpnone-641">
-                                <strong class="order_sum-txt">3,000원</strong>
-                                <p class="add_currency"></p>
-                            </td>
-                            <td class="td_delivery nd-dpnone" rowspan="1">
-                                " 기본 - 금액별 배송비 "<br>
-                                " 2,500원 " <br>
-                                " (택배-선결제) "
-                            </td>
+                            <td colspan="8" class="no_line"><strong>Product Cost <span class="total">30</span>,000 ₩ &nbsp+&nbsp Shipping fee 3,000 ₩ &nbsp=&nbsp Total <span id="total">33</span>,000 ₩</strong></td>
                         </tr>
                     </tbody>
                 </table>
             </form>
+            <button id="reset" class="btn" onclick="buy()">Buy Now</button>
 
         </div>
     </div>
