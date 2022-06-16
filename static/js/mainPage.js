@@ -45,15 +45,6 @@ function zoomOut(event) {
     dv.querySelector(".inner_box").style.display = 'none';
 }
 
-$(document).ready(function(){
-    $(".image-frame").mouseenter(function(){
-        $(".image-caption", this).slideDown("slow");
-    });
-    $(".image-frame").mouseleave(function(){
-        $(".image-caption, this").slideUp("slow");
-    });
-});
-
 function pageMove(){
     location.href = './../../Dessert/templates/brand.html';
 }
@@ -73,7 +64,6 @@ function drawChart() {
     var data = new google.visualization.DataTable();
     data.addColumn('string', 'Task ID');
     data.addColumn('string', 'Task Name');
-    data.addColumn('string', 'Resource');
     data.addColumn('date', 'Start Date');
     data.addColumn('date', 'End Date');
     data.addColumn('number', 'Duration');
@@ -81,25 +71,25 @@ function drawChart() {
     data.addColumn('string', 'Dependencies');
 
     data.addRows([
-        ['task1', 'Requirements Analysis', 'spring',
+        ['task1', 'Requirements Analysis',
             new Date(2022, 4, 23), new Date(2022, 4, 30), null, 100, null],
-        ['task2', 'UI and functional refinement', 'summer',
+        ['task2', 'UI and functional refinement',
             new Date(2022, 5, 1), new Date(2022, 5, 8), null, 100, null],
-        ['task3', 'UI Design', 'autumn',
+        ['task3', 'UI Design',
             new Date(2022, 5, 9), new Date(2022, 5, 20), null, 100, null],
-        ['task4', 'Mainpage development', 'winter',
+        ['task4', 'Mainpage development',
             new Date(2022, 5, 21), new Date(2022, 5, 31), null, 100, null],
-        ['task5', 'Newspage development', 'spring',
+        ['task5', 'Newspage development',
             new Date(2022, 5, 21), new Date(2022, 5, 31), null, 100, null],
-        ['task6', 'Login & Signup page development', 'summer',
+        ['task6', 'Login & Signup page development',
             new Date(2022, 5, 21), new Date(2022, 5, 31), null, 100, null],
-        ['task7', 'menu & brand page development', 'autumn',
+        ['task7', 'menu & brand page development',
             new Date(2022, 6, 1), new Date(2022, 6, 12), null, 100, null],
-        ['task8', 'custom page development', 'winter',
+        ['task8', 'custom page development',
             new Date(2022, 6, 1), new Date(2022, 6, 12), null, 100, null],
-        ['task9', 'franchise page development', 'sports',
+        ['task9', 'franchise page development',
             new Date(2022, 6, 1), new Date(2022, 6, 12), null, 80, null],
-        ['task10', 'Finalize projects and create ppts', 'sports',
+        ['task10', 'Finalize projects and create ppts',
             new Date(2022, 6, 13), new Date(2022, 6, 17), null, 100, null],
     ]);
 
