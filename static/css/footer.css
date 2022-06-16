@@ -36,12 +36,13 @@ footer ul li:nth-of-type(1) {
     left: 15vw;
 }
 
+
 footer ul li:nth-of-type(2) {
-    left: 19.3vw;
+    left: 43.3vw;
 }
 
 footer ul li:nth-of-type(3) {
-    left: 20vw;
+    left: 45vw;
 }
 
 footer ul li:nth-of-type(4) {
@@ -51,6 +52,7 @@ footer ul li:nth-of-type(4) {
 footer ul li:nth-of-type(5) {
     left: 25vw;
 }
+/*중간*/
 
 footer ul li a {
     color: #37131e;
@@ -62,5 +64,4 @@ footer pre {
     left: 15vw;
     top: 7vh;
     padding-right: 5vw;
-    /* color: #e0e0e0; */
 }
