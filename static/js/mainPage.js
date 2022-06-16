@@ -18,6 +18,15 @@ function myMap() {
         position: myCenter,
         map: map
     });
+
+    var infoWindow = new google.maps.InfoWindow({
+        content:
+            "<p> 충북대학교 전자정보 3관 </p>"
+    });
+    // Add a click listener to open the info window when the marker is clicked.
+    marker.addListener('click', function() {
+        infoWindow.open(map, marker);
+    });
 }
 
 function zoomIn(event) {
