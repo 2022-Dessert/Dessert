@@ -26,20 +26,73 @@
 
         <div id="container">
             <div id="Sub-header">
-                <li class="on"><a href="#"> 인기 상품 </a></li>
-                <li class="on"><a href="#"> 매출 현황 </a></li>
-                <li class="on"><a href="#"> 분점 현황 </a></li>
+                <li class="on"><a href="#col1"> Best Seller </a></li>
+                <li class="on"><a href="#col2"> Sales Trend </a></li>
+                <li class="on"><a href="#col3"> Branch Location </a></li>
             </div>
         </div>
+
         <section id="page-start">
 
-            <div class="chart">
-                <div id="piechart"></div>
+            <div class="row" >
+                <div class="col-md-4">
+                    <h1>What is De Bon?</h1>
+                </div>
+                <div class="col-md-8">
+                    <h3>Description of Debon</h3>
+                    <p>
+                        De Bon wanted to convey the meaning of selling good desserts, named after de Bon, which means <b>good things</b> in French.
+                        It is headquartered in Chungcheongbuk-do University Electronic Information Hall 3 in Cheongju, Korea, and has branches nationwide
+                        in Pyeongtaek, Gangneung, and Daejeon, the hometowns of each team member.
+                        We are working hard to establish more branches in the country.<br>
+
+                        In addition to selling desserts under development by Debon itself, users can customize and order desserts themselves.
+                        Users will be able to customise their own desserts to get the design they want,
+                        and the recipient of the gift will be able to feel the sincerity.
+                        You will feel fun and proud while making dessert.<br>
+
+                        Under the vision of growing into a "high-quality dessert cafe,"
+                        Debon is trying to captivate customers with 100% handmade desserts.
+                        Debow growing the harder from now on.<br>
+                    </p>
+                </div>
             </div>
-            <div class="line">
-                <div id="curve_chart"></div>
+            <div class="row" id="col1">
+                <div class="col-md-6">
+                    <h3>Best Seller</h3>
+                    <p>This chart shows a list of the best-selling desserts in Debon. <br>
+                        The best seller in Devon is apple tart, followed by chocolate tart and carrot cake. There are blueberry yogurt cakes, and so on. <br>
+                        You can see that apple tarts using domestic apples are the most popular, and generally, tarts are more popular than cakes. <br>
+                        </p>
+                </div>
+                <div class="col-md-6">
+                    <div id="chart">
+                        <div id="piechart"></div>
+                    </div>
+                </div>
             </div>
-            <div class="mapPart">
+
+            <div class="row" id="col2">
+                <div class="col-md-6">
+                    <div id="line">
+                        <div id="curve_chart"></div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h3>Sales Trend</h3>
+                    <p>This chart shows sales trends for 2020 and 2021. <br>
+                        If you look at the chart, 2020 shows high sales in the beginning, but it is falling toward the second half.
+                        This can be analyzed because sales have decreased due to the influence of COVID-19. <br>
+                        In 2021, as COVID-19 gradually stabilizes, sales will gradually increase accordingly.
+                        The following line charts provide a better understanding of sales trends over the past two years.
+                       </p>
+                </div>
+
+            </div>
+
+            <div id="mapPart">
+                <h2 id="col3">Branch Location</h2>
+                <p>The following is a map that shows the location of branches located across the country at a glance.</p>
                 <div id="map"></div>
             </div>
         </section>
@@ -53,7 +106,7 @@
     <script src="../static/js/footer.js"></script>
     <script
             class="script_api"
-            src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDjgzOCwqS88xhlO2-TjIyeeBdvbxroh70&callback=myMap"
     ></script>
 </body>
 </html>

@@ -1,5 +1,3 @@
-AOS.init();
-
 /* Demo purposes only */
 $(".hover").mouseleave(
     function () {
