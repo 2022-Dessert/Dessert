@@ -1,5 +1,9 @@
 $(document).ready(function(){
 
+    $('.fruits').css('display', 'none');
+    $('#middleArea').css('display', 'none');
+
+
     var place = document.getElementsByClassName('check');
     place[3].style.display = 'none';
    
@@ -56,7 +60,7 @@ function reset(){
         }
     }
     var place = document.getElementsByClassName('check');
-    place[2].style.display = 'none';
+    place[3].style.display = 'none';
 
     var letter = document.getElementsByName('letter');
     for(var i = 0; i < letter.length; i++){
@@ -74,10 +78,20 @@ function save(){
     var size_check = $('input:radio[id=middle]').is(':checked') || $('input:radio[id=large]').is(':checked');
     var f_check = $('input:radio[id=fruit_y]').is(':checked') || $('input:radio[id=fruit_n]').is(':checked');
     var l_check = $('input:radio[id=letter_y]').is(':checked') || $('input:radio[id=letter_n]').is(':checked');
+    
+    // id out으로 바꿔서 적용하기
+    var custom = $('input:radio[id=out]').is(':checked') || $('input:radio[id=both]').is(':checked')
 
     if(sheet_check == true && size_check == true && f_check == true && l_check == true){
         $("input:radio").attr("disabled", true); 
         alert('저장이 완료되었습니다.');
+
+        if(custom == true){
+            
+            $('.fruits').fadeIn();
+
+        }
+
     }
     else{
         alert('체크하지 않은 항목이 있습니다.');
@@ -100,24 +114,31 @@ function getTop(o){
         
         // 이미지 움직이기
 function moveDrag(e){
+
     var e_obj = window.event? window.event : e;
     var dmvx = parseInt(e_obj.clientX + img_L);
     var dmvy = parseInt(e_obj.clientY + img_T);
+
     targetObj.style.left = dmvx +"px";
     targetObj.style.top = dmvy +"px";
+
     return false;
 }
         
         // 드래그 시작
 function startDrag(e, obj){
+
     targetObj = obj;
     var e_obj = window.event? window.event : e;
+
     img_L = getLeft(obj) - e_obj.clientX;
     img_T = getTop(obj) - e_obj.clientY;
         
     document.onmousemove = moveDrag;
     document.onmouseup = stopDrag;
+
     if(e_obj.preventDefault)e_obj.preventDefault(); 
+
 }
         
         // 드래그 멈추기
@@ -126,16 +147,35 @@ function stopDrag(){
     document.onmouseup = null;
 }
 
-function CreateImage(ImgName, obj){
-    var img = document.createElement('img');
 
-    img.src = '../static/src/' + ImgName + '.png';
-    img.position = 'absolute';
-    img.left = '0px';
-    img.top = '50px';
-    img.cursor = 'pointer';
-    img.cursor = 'hand';
-    img.width = '50px';
-    
-    obj.appendChild(img);
+
+function CreateImage(ImgName){
+
+    var img = document.createElement('img'); // 이미지 객체 생성
+
+    img.src = '../../static/src/' + ImgName + '.png'; // 이미지 경로 설정
+
+    img.style.cursor = 'pointer'; // 커서 지정
+
+    //style 지정
+    img.style.position = 'absolute';
+    img.style.left = '0px';
+    img.style.top = '50px';
+    img.style.cursor = 'hand';
+    img.style.width = '50px';
+
+    //해당 위치에 img 추가
+    document.getElementById(ImgName).appendChild(img); 
+
+    // img.onmousedown = startDrag(event, this);
+}
+
+function Start() {
+
+    var $start = $('#middleArea');
+    $('#start').fadeOut();
+
+    $start.fadeIn();
+    $start.css('display', 'flex');
+
 }

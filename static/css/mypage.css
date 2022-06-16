@@ -1,109 +1,68 @@
+@import url(//fonts.googleapis.com/earlyaccess/kopubbatang.css);
+body { background-color: #F9F8EA; font-family: 'KoPub Batang', serif;}
+h1{ margin: 100px 0 0 46%; font-weight: bolder;}
+.mypage{
+    margin-top: 75px;
+    margin-left: 150px;
+    width: 80%;
+}
+
 .order_info {
-    margin: 0 0 30px 0;
+    margin-bottom:  50px;
     padding: 35px 0 35px 0;
-    font-size: 0;
     border: 1px solid #e3e3e3;
     border-top: 1px solid #684745;
     text-align: center;
 }
-b{
+
+b {
     display: block;
-    padding: 0 0 15px 0;
+    padding-bottom: 5px;
 }
 
 .order_info ol li strong {
-    display: inline-block;
-    width: 52px;
-    height: 52px;
-    padding: 10px 0 0 0;
-    color: #ffffff;
-    font-size: 18px;
-    border-radius: 50%;
-    background-color: #684745;
-    text-align: center;
-    vertical-align: middle;
-}
-
-ul, ol, li {
-    list-style: none;
+    display: inline-block;  
+    width: 50px;             height: 50px;
+    padding-top: 30%;        text-align: center;
+    color: #ffffff;        font-size: 16px;
+    border-radius: 50%;      background-color: #684745;
 }
 
 .order_info ol li {
     display: inline-block;
-    width: 10%;
-    min-width: 66px;
+    width: 7%;
     padding: 0 10px 0 30px;
-    background: url(../src/right-arrow.png) no-repeat left 50px;
     font-size: 13px;
     text-align: center;
 }
-
-
-.order_table table {
+ 
+table {
     width: 100%;
-    border: 0;
-    border-spacing: 0;
     border-collapse: collapse;
     text-align: center;
 }
-
-.order_table th {
-    padding: 9px 10px 10px 10px;
-    border-top: 1px solid #999999;
-    border-bottom: 1px solid #dbdbdb;
-    background: #f7f7f7;
-}
-
 th {
-    display: table-cell;
-    vertical-align: inherit;
-    font-weight: bold;
-    text-align: -internal-center;
-}
-tr {
-    display: table-row;
-    vertical-align: inherit;
-    border-color: inherit;
-}
-
-tbody {
-    display: table-row-group;
-    vertical-align: middle;
-    border-color: inherit;
-}
-thead {
-    display: table-header-group;
-    vertical-align: middle;
-    border-color: inherit;
+    padding: 9px 10px 10px 10px;
+    text-align: center;
+    border-top: 1px solid #999999;
+    background: #684745;
+    color: #f7f7f7;
 }
 td {
-    display: table-cell;
-    vertical-align: inherit;
-}
-
-.order_table .td_delivery {
-    border-left: 1px solid #ebebeb;
-}
-.order_table td {
-    height: 31px;
-    padding: 15px 10px 14px 10px;
+    height: 30px;
+    padding: 15px 10px 15px 10px;
     color: #777777;
     border-bottom: 1px solid #dbdbdb;
-    /* border-left: 1px dotted #ededed; */
     background: #ffffff;
 }
 
-.order_table .benefit {
-    border-left: 1px solid #ebebeb;
-    border-right: 1px solid #ebebeb;
-}
+.size { height: 125px; }
+td:not(.no_line) { border-left: 1px solid #ebebeb; }
+.ch_num{ width: 18%; }
 
-.order_table .order_amount {
-    border-left: 1px solid #eee;
-    border-right: 1px solid #eee;
-}
-
-form {
-    padding: 20px;
-    margin: 20px;
+button {
+    margin-top: 40px;
+    margin-left: 50%;
+    background-color: #684745;
+    color: white;
 }

@@ -20,7 +20,12 @@
 </head>
 <body>
     <header></header>
+    <section id="page-start"></section>
+
     <div id="content">
+        <h2>Custom your cake by your own</h2>
+        <!-- button 색깔 바꾸기 -->
+        <button type="button" id="start" class="btn" onclick="Start()">Start Now</button>
         <div id="middleArea">
             <div id="custom">
                 <div class="wrapper">
@@ -54,50 +59,58 @@
                     <input type="radio" id="letter_y" name="letter"><label for="letter_y">O</label>
                     <input type="radio" id="letter_n" name="letter"><label for="letter_n">X</label>
                 </div>
-                <textarea id="text" placeholder="중 사이즈는 10자 이내 대는 15자 이내로 가능합니다. :)"></textarea>
+                <textarea id="text" placeholder="Medium size can be up to 10 words and Large size can be up to 15 words. :)"></textarea>
                 <div class="button">
-                    <button id="save" onclick="save()">Save</button>
-                    <button id="reset" onclick="reset()">Reset</button>
+                    <button id="save" class="btn" onclick="save()">Save</button>
+                    <button id="reset" class="btn" onclick="reset()">Reset</button>
                 </div>
             </div>
         </div>
-        <section id="page-start">
-            <div class="fruits">
-                <div class="container-fluid text-center bg-3">
-                    <div class="row">
-                        <div class="col-sm-1">
-                            <img src="../static/src/cream.png" style="position:absolute; left:0px; top:50px; width:50px; cursor:pointer; cursor:hand" onmousedown="startDrag(event, this)" onclick="CreateImage('cream', this)">
-                        </div>
-                        <div class="col-sm-1">
-                            <img src="../static/src/whipped-cream.png" style="position:absolute; left:0px; top:50px; width:50px; cursor:pointer; cursor:hand" onmousedown="startDrag(event, this)" onclick="CreateImage('whipped-cream', this)" >
-                        </div>
-                        <div class="col-sm-1">
-                            <img src="../static/src/grape.png" style="position:absolute; left:0px; top:50px; cursor:pointer; cursor:hand; width:50px;" onmousedown="startDrag(event, this)" onclick="CreateImage('grape', this)">
-                        </div>
-                        <div class="col-sm-1">
-                            <img src="../static/src/strawberries.png" style="position:absolute; left:0px; top:50px; width:50px; cursor:pointer; cursor:hand" onmousedown="startDrag(event, this)" onclick="CreateImage('strawberries', this)">
-                        </div>
-                        <div class="col-sm-1">
-                            <img src="../static/src/orange.png" style="position:absolute; left:0px; top:50px; width:50px; cursor:pointer; cursor:hand" onmousedown="startDrag(event, this)" onclick="CreateImage('orange', this)">
-                        </div>
-                        <div class="col-sm-1">
-                            <img src="../static/src/pineapple.png" style="position:absolute; left:0px; top:50px; width:50px; cursor:pointer; cursor:hand" onmousedown="startDrag(event, this)" onclick="CreateImage('pineapple', this)">
-                        </div>
-                        <div class="col-sm-1">
-                            <img src="../static/src/kiwi.png" style="position:absolute; left:0px; top:50px; width:50px; cursor:pointer; cursor:hand" onmousedown="startDrag(event, this)" onclick="CreateImage('kiwi', this)">
-                        </div>                       
-                        <div class="col-sm-1">
-                            <img src="../static/src/redberry.png" style="position:absolute; left:0px; top:50px; width:50px; cursor:pointer; cursor:hand" onmousedown="startDrag(event, this)" onclick="CreateImage('redberry', this)">
-                        </div>
-                        <div class="col-sm-1">
-                            <img src="../static/src/blueberry.png" style="position:absolute; left:0px; top:50px; width:50px; cursor:pointer; cursor:hand" onmousedown="startDrag(event, this)" onclick="CreateImage('blueberry', this)">
-                        </div>
+        
+
+        <div class="fruits">
+            <p>Select a fruit you want and move it into the circle!</p>
+            <div class="container-fluid text-center bg-3">
+                <div class="row">
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-1"></div>
+
+                    <div class="col-sm-1" id="cream">
+                        <img src="../static/src/cream.png" style="position:absolute; left:0px; top:50px; width:50px; cursor:pointer; cursor:hand" onmousedown="startDrag(event, this)" onclick="CreateImage('cream')">
                     </div>
+                    <div class="col-sm-1" id="whipped-cream">
+                        <img src="../static/src/whipped-cream.png" style="position:absolute; left:0px; top:50px; width:50px; cursor:pointer; cursor:hand" onmousedown="startDrag(event, this)" onclick="CreateImage('whipped-cream')" >
+                    </div>
+                    <div class="col-sm-1" id="grape">
+                        <img src="../static/src/grape.png" style="position:absolute; left:0px; top:50px; cursor:pointer; cursor:hand; width:50px;" onmousedown="startDrag(event, this)" onclick="CreateImage('grape')">
+                    </div>
+                    <div class="col-sm-1" id="strawberries">
+                        <img src="../static/src/strawberries.png" style="position:absolute; left:0px; top:50px; width:50px; cursor:pointer; cursor:hand" onmousedown="startDrag(event, this)" onclick="CreateImage('strawberries')">
+                    </div>
+                    <div class="col-sm-1" id="orange">
+                        <img src="../static/src/orange.png" style="position:absolute; left:0px; top:50px; width:50px; cursor:pointer; cursor:hand" onmousedown="startDrag(event, this)" onclick="CreateImage('orange')">
+                    </div>
+                    <div class="col-sm-1" id="pineapple">
+                        <img src="../static/src/pineapple.png" style="position:absolute; left:0px; top:50px; width:50px; cursor:pointer; cursor:hand" onmousedown="startDrag(event, this)" onclick="CreateImage('pineapple')">
+                    </div>
+                    <div class="col-sm-1" id="kiwi">
+                        <img src="../static/src/kiwi.png" style="position:absolute; left:0px; top:50px; width:50px; cursor:pointer; cursor:hand" onmousedown="startDrag(event, this)" onclick="CreateImage('kiwi')">
+                    </div>                       
+                    <div class="col-sm-1" id="redberry">
+                        <img src="../static/src/redberry.png" style="position:absolute; left:0px; top:50px; width:50px; cursor:pointer; cursor:hand" onmousedown="startDrag(event, this)" onclick="CreateImage('redberry')">
+                    </div>
+                    <div class="col-sm-1" id="blueberry">
+                        <img src="../static/src/blueberry.png" style="position:absolute; left:0px; top:50px; width:50px; cursor:pointer; cursor:hand" onmousedown="startDrag(event, this)" onclick="CreateImage('blueberry')">
+                    </div>
+                    <div class="col-sm-1"></div>
                 </div>
             </div>
-        
-            <!-- <footer></footer> -->
-        </section>
+        </div>
+    
+        <div id="footer">
+            <footer ></footer>
+        </div>
+
     </div>    
 
 </body>
