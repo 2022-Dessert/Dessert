@@ -1,10 +1,16 @@
 @import url(//fonts.googleapis.com/earlyaccess/kopubbatang.css);
 body { background-color: #F9F8EA; font-family: 'KoPub Batang', serif;}
+h2 {text-align: center; margin-top: 150px;}
+#start { margin: 50px auto 200px 48%;}
 #middleArea { display: flex; }
 #custom { 
     width: 350px; height: 350px; 
-    margin: 200px auto 100px 400px; 
+    margin: 75px auto 100px 400px; 
     background-color: white; border: 1px solid rgb(98, 62, 39);
+}
+button {
+    background-color: rgb(98, 62, 39);
+    color: white;
 }
 .circle {
     margin: 0 auto;
@@ -20,7 +26,7 @@ body { background-color: #F9F8EA; font-family: 'KoPub Batang', serif;}
 }
 .select {
     width: 60%;
-    margin: 200px auto 100px 200px; 
+    margin: 70px auto 100px 200px; 
 
 }
 
@@ -65,7 +71,12 @@ button {
     margin: 10px 30px auto 30px;
 }
 
-.fruit {
+.fruits {
+    height: 300px;
+    text-align: center;
+}
+
+#footer {
     display: block;
-    position: absolute;
+
 }
