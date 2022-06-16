@@ -1,12 +1,32 @@
 $(document).ready(function(){
 
+    // radio check (custom 요소 체크)
     $('.fruits').css('display', 'none');
     $('#middleArea').css('display', 'none');
 
 
     var place = document.getElementsByClassName('check');
     place[3].style.display = 'none';
+
+    // sheet 경우
+    $('#vanila').click(function(){
+        $('#circle').css('background-color', 'white');
+    });
+
+    $('#choco').click(function(){
+        $('#circle').css('background-color', '#684745');
+    });
+
+    // size 경우
+    $('#middle').click(function(){
+        alert('This size costs 25,000 ₩.');
+    });
+
+    $('#large').click(function(){
+        alert('This size costs 30,000 ₩.');
+    });
    
+    // fruit 선택의 경우
     $('#fruit_y').click(function(){
         place[3].style.display = 'block';
     });
@@ -18,6 +38,7 @@ $(document).ready(function(){
     var text = document.getElementById('text');
     text.style.display = 'none';
 
+    // lettering 선택 경우
     $('#letter_y').click(function(){
         text.style.display = 'block';
     });
@@ -29,6 +50,8 @@ $(document).ready(function(){
 });
 
 function reset(){
+
+    alert('Successfully Reseted.');
 
     $("input:radio").attr("disabled", false);
 
@@ -84,17 +107,14 @@ function save(){
 
     if(sheet_check == true && size_check == true && f_check == true && l_check == true){
         $("input:radio").attr("disabled", true); 
-        alert('저장이 완료되었습니다.');
+        alert('Successfully Saved.');
 
         if(custom == true){
-            
             $('.fruits').fadeIn();
-
         }
-
     }
     else{
-        alert('체크하지 않은 항목이 있습니다.');
+        alert('There are unchecked items.');
     }
     
 }
@@ -174,8 +194,14 @@ function Start() {
 
     var $start = $('#middleArea');
     $('#start').fadeOut();
+    $('h1').animate({marginTop:'-=200px'}, 1000);
 
     $start.fadeIn();
     $start.css('display', 'flex');
+}
 
+function submit() {
+    alert('Your order has been submitted.');
+    alert('... Moving to MYPAGE ...');
+    location.href = '../../templates/custom.html'
 }
