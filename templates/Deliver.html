@@ -3,137 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="../static/css/header.css" />
+    <link rel="stylesheet" href="../static/css/footer.css" />
+    <link rel="stylesheet" href="../static/css/Deliver.css" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Debon 주소록</title>
-    <style type="text/css">
-      .container {
-        margin: 20px;
-      }
-
-      .asterisk {
-        color: red;
-        font-family: "KoPub Batang", serif;
-        font-weight: bold;
-        padding-left: 1.5px;
-      }
-
-      .leftAngle {
-        color: red;
-        font-family: "KoPub Batang", serif;
-        font-weight: bold;
-        font-size: 20px;
-      }
-
-      .showAddr,
-      .postNum {
-        cursor: pointer;
-        background-color: white;
-        border: 1px solid #c9c9c9;
-        border-radius: 3px;
-      }
-
-      table,
-      td {
-        border: 1px solid #e9e9e9;
-        border-collapse: collapse;
-        width: 60vw;
-      }
-
-      table > caption:nth-child(1) {
-        text-align: left;
-        margin: 10px 1.2vw;
-      }
-
-      table > caption:nth-child(2) {
-        text-align: right;
-      }
-
-      table tr:nth-child(1) {
-        height: 4.5vh;
-      }
-
-      table tr:nth-child(2) {
-        height: 4.5vh;
-      }
-
-      table tr:nth-child(4) {
-        height: 4.5vh;
-      }
-
-      table tr:nth-child(3) td {
-        padding-bottom: 11px;
-      }
-
-      table tr:nth-child(5) td {
-        padding-top: 15px;
-      }
-
-      table tr:nth-child(6) td {
-        padding: 15px;
-      }
-
-      td {
-        padding-left: 10px;
-        color: grey;
-      }
-
-      table tr:nth-child(1) label:nth-child(2) {
-        margin-right: 30px;
-      }
-
-      .addr,
-      .restAddr {
-        width: 500px;
-      }
-
-      .phone1,
-      .phone2 {
-        width: 50px;
-      }
-
-      table tr:nth-child(1) td:nth-child(1) {
-        width: -50px;
-      }
-
-      table tr:nth-child(3) input {
-        margin-top: 7px;
-      }
-
-      table tr:nth-child(3) input:nth-child(2) {
-        width: 500px;
-      }
-
-      textarea {
-        width: 900px;
-        height: 60px;
-      }
-
-      input[type="text"] {
-        border: 1px solid #c9c9c9;
-        padding: 4px;
-      }
-    </style>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Debon Deliver</title>
   </head>
   <body>
-    <div class="visual-img-wrap">
-      <div
-        class="visual-img"
-        style="background: #fff url(../static/src/img2.jpg) no-repeat 50% 0%"
-      ></div>
-    </div>
-    <div class="area visual-txt-con">
-      <h2 class="visual-tit">FRANCHISE</h2>
-      <p class="visual-sub-txt" style="transition-delay: 0.5s">
-        Debon의 프랜차이즈 개설절차 및 창업상담 등을 안내해드립니다
-      </p>
-    </div>
+    <header></header>
+
     <div class="container">
       <table border="1">
         <caption>
-          배송 정보
+          Shipping Information
         </caption>
         <caption>
-          필수입력사항<span class="asterisk">*</span>
+          Required input<span class="asterisk">*</span>
         </caption>
         <colgroup width="700px">
           <col style="width: 18%" />
@@ -142,66 +38,63 @@
         <tbody>
           <!-- 배송지 선택 -->
           <tr>
-            <td>배송지 선택</td>
+            <td>Shipping Destination</td>
             <td>
               <label
                 ><input type="radio" name="deliverySite" value="userInfo" />회원
-                정보와 동일</label
+                Same as information</label
               >
               <label
-                ><input
-                  type="radio"
-                  name="deliverySite"
-                  value="newInfo"
-                />새로운 배송지</label
+                ><input type="radio" name="deliverySite" value="newInfo" />New
+                Shipping Destination</label
               >
               <label>
-                최근 배송지:<input
+                Recent Shipping Destinations:<input
                   type="radio"
                   name="user"
                   value="userName"
                   checked
-                />홍길동
+                />Hong gil dong
               </label>
               <button class="showAddr">
-                주소록보기 <span class="leftAngle">></span>
+                View Address Book <span class="leftAngle">></span>
               </button>
             </td>
             <!-- 받으시는 분 -->
           </tr>
           <tr>
-            <td>받으시는 분<span class="asterisk">*</span></td>
-            <td><input type="text" placeholder="홍길동" /></td>
+            <td>Recipient<span class="asterisk">*</span></td>
+            <td><input type="text" placeholder=" Hong gil dong" /></td>
           </tr>
           <!-- 주소 -->
           <tr>
-            <td>주소<span class="asterisk">*</span></td>
+            <td>Address<span class="asterisk">*</span></td>
             <td>
               <input type="text" placeholder="25495" />
               <button class="postNum">
-                우편번호 <span class="leftAngle">></span></button
+                Postal code <span class="leftAngle">></span></button
               ><br />
               <label
                 ><input
                   type="text"
-                  placeholder="충청북도 청주시 충대로 1..."
+                  placeholder="Cheongju-si, Chungcheongnam-do, 1..."
                   class="addr"
                 />
-                기본주소</label
+                Basic address</label
               ><br />
               <label
                 ><input
                   type="text"
-                  placeholder="XXX동 XXX호"
+                  placeholder="XXXroad XXX"
                   class="restAddr"
                 />
-                나머지주소(선택입력가능)</label
+                Remaining address (selectable input)</label
               >
             </td>
           </tr>
           <!-- 휴대전화 -->
           <tr>
-            <td>휴대전화<span class="asterisk">*</span></td>
+            <td>Cell phone<span class="asterisk">*</span></td>
             <td>
               <select>
                 <option>010</option>
@@ -216,7 +109,7 @@
           </tr>
           <!-- 이메일 -->
           <tr>
-            <td>이메일<span class="asterisk">*</span></td>
+            <td>E-mail<span class="asterisk">*</span></td>
             <td>
               <input type="text" placeholder="abc" /> @
               <input type="text" placeholder="naver.com" />
@@ -227,14 +120,15 @@
                 <option>google.com</option>
               </select>
               <p>
-                이메일을 통해 주문처리과정을 보내드립니다.<br />이메일
-                주소란에는 반드시 수신가능한 이메일주소를 입력해 주세요.
+                we are sending you the order process through email.<br />In the
+                Email Address field, be sure to enter an acceptable email
+                address.
               </p>
             </td>
           </tr>
           <!-- 배송메시지 -->
           <tr>
-            <td>배송메시지</td>
+            <td>Delivery message</td>
             <td>
               <textarea name="" id="" cols="30" rows="10"></textarea>
             </td>
@@ -242,5 +136,9 @@
         </tbody>
       </table>
     </div>
+    <section id="page-start"></section>
+    <footer></footer>
+    <script src="../static/js/header.js"></script>
+    <script src="../static/js/footer.js"></script>
   </body>
 </html>
