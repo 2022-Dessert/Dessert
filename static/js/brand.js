@@ -8,9 +8,9 @@ function drawPieChart() {
     data.addColumn('string', 'Topping');
     data.addColumn('number', 'Slices');
     data.addRows([
-        ['Apple Tart', 1],
-        ['Carrot Cake', 1],
-        ['Blueberry yogurt cake', 2],
+        ['Apple Tart', 3],
+        ['Carrot Cake', 1.5],
+        ['Blueberry yogurt cake', 1],
         ['Chocolate Tart', 2],
         ['etc', 0.5]
     ]);
@@ -86,8 +86,8 @@ function myMap() {
 
     var infoWindow = new google.maps.InfoWindow({
         content:
-            "<h4> 청주 본점</h4>" +
-            "<p> 충북대학교 전자정보 3관 </p>"
+            "<h4> Cheongju Main Store</h4>" +
+            "<p> Chungcheongbuk-do University Electronic Information Hall 3 </p>"
     });
     // Add a click listener to open the info window when the marker is clicked.
     marker.addListener('click', function() {
@@ -95,8 +95,8 @@ function myMap() {
     });
     var infoWindow2 = new google.maps.InfoWindow({
         content:
-            "<h4> 대전 분점 </h4>" +
-            "<p> 하레하레 </p>"
+            "<h4> Daejeon Branch</h4>" +
+            "<p> HareHare </p>"
     });
     // Add a click listener to open the info window when the marker is clicked.
     marker2.addListener('click', function() {
@@ -104,8 +104,8 @@ function myMap() {
     });
     var infoWindow3 = new google.maps.InfoWindow({
         content:
-            "<h4> 강릉 분점 </h4>" +
-            "<p> 돌체테리아 </p>"
+            "<h4> Gangneung Branch </h4>" +
+            "<p> Dolceteria </p>"
     });
     // Add a click listener to open the info window when the marker is clicked.
     marker3.addListener('click', function() {
@@ -113,8 +113,8 @@ function myMap() {
     });
     var infoWindow4 = new google.maps.InfoWindow({
         content:
-            "<h4> 평택 분점 </h4>" +
-            "<p> 수제 빵 전문점 </p>"
+            "<h4> Pyeongtaek Branch </h4>" +
+            "<p> a home-made bread restaurant </p>"
     });
     // Add a click listener to open the info window when the marker is clicked.
     marker4.addListener('click', function() {

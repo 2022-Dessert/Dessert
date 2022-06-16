@@ -18,6 +18,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="../static/js/jquery.cycle2.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
   </head>
   <body>
     <header></header>
@@ -51,56 +52,115 @@
             I'm going to eat it and my parents will eat it.<br />
             It's a handmade dessert shop where you make desserts with all your heart.
           </p>
-          <input type="button" value="more" />
+          <input type="button" value="more" onclick="pageMove()" />
         </div>
-        <hr />
-        <h2>PRODUCT</h2>
-        <div class="wrap">
-          <div class="first_wrap" style="margin-left: 110px">
-            <div
-              class="first_wrap"
-              onmouseenter="zoomIn(event)"
-              onmouseleave="zoomOut(event)"
-            >
-              <div class="inner_box">
-                <hr class="vertical_hr" />
-                <p>DE BON</p>
-                <h1 style="margin-top: -5px">
-                  DESSERT<br />
-                  TARTE
-                </h1>
-                <hr class="vertical_hr" />
+
+        <div class="container">
+          <h2>Our Team</h2>
+          <p>Introducing our team with a lot of passion</p>
+          <table>
+            <tr>
+              <td>
+                <figure class="snip1141" style="margin-left: 100px">
+                  <img src="../static/src/jiwoo.jpg" alt="sq-sample27" data-toggle="collapse" data-target="#demo"/>
+                  <figcaption>
+                    <div class="circle"><i class="ion-ios-plus-empty"></i></div>
+                    <h2>Oh Jiwoo</h2>
+                    <div id="demo" class="collapse" style="margin-top: 20px;">
+                      Role: <br>
+                      - Main page <br>
+                      - Brand page <br>
+                      - Menu page <br>
+                    </div>
+                  </figcaption>
+                </figure>
+                <figure class="snip1141 hover">
+                  <img src="../static/src/jiin.jpg" alt="sq-sample14" data-toggle="collapse" data-target="#demo2"/>
+                  <figcaption>
+                    <div class="circle"><i class="ion-ios-plus-empty"> </i></div>
+                    <h2>Kim Jiin</h2>
+                    <div id="demo2" class="collapse" style="margin-top: 20px;">
+                      Role: <br>
+                      - Custom page <br>
+                      - News page <br>
+                      - My page <br>
+                    </div>
+                  </figcaption>
+                </figure>
+                <figure class="snip1141">
+                  <img src="../static/src/seongyon.png" alt="sq-sample17" data-toggle="collapse" data-target="#demo3"/>
+                  <figcaption>
+                    <div class="circle"><i class="ion-ios-plus-empty"> </i></div>
+                    <h2>Kim Seongyon</h2>
+                    <div id="demo3" class="collapse" style="margin-top: 20px;">
+                      Role: <br>
+                      - Login/Signup page <br>
+                      - Franchise page <br>
+                      - Server connection <br>
+                    </div>
+                  </figcaption>
+                </figure>
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="gantt">
+          <h2>Gantt Chart</h2>
+          <p>This is a table showing our development schedule.</p>
+          <div id="chart_div"></div>
+        </div>
+
+        <div style="margin-top: 100px;">
+          <h2>PRODUCT</h2>
+          <div class="wrap">
+            <div class="first_wrap" style="margin-left: 110px">
+              <div
+                class="first_wrap"
+                onmouseenter="zoomIn(event)"
+                onmouseleave="zoomOut(event)"
+              >
+                <div class="inner_box">
+                  <hr class="vertical_hr" />
+                  <p>DE BON</p>
+                  <h1 style="margin-top: -5px">
+                    DESSERT<br />
+                    TARTE
+                  </h1>
+                  <hr class="vertical_hr" />
+                </div>
+                <img
+                  class="mouseover_img"
+                  src="../static/src/img6.png"
+                  alt="타르트"
+                />
               </div>
-              <img
-                class="mouseover_img"
-                src="../static/src/img6.png"
-                alt="타르트"
-              />
+            </div>
+            <div class="second_wrap">
+              <div
+                class="second_wrap"
+                onmouseenter="zoomIn(event)"
+                onmouseleave="zoomOut(event)"
+              >
+                <div class="inner_box">
+                  <hr class="vertical_hr" />
+                  <p>DE BON</p>
+                  <h1 style="margin-top: -5px">
+                    DESSERT<br />
+                    CAKE
+                  </h1>
+                  <hr class="vertical_hr" />
+                </div>
+                <img
+                  class="mouseover_img"
+                  src="../static/src/img7.jpg"
+                  alt="케이크"
+                />
+              </div>
             </div>
           </div>
-          <div class="second_wrap">
-            <div
-              class="second_wrap"
-              onmouseenter="zoomIn(event)"
-              onmouseleave="zoomOut(event)"
-            >
-              <div class="inner_box">
-                <hr class="vertical_hr" />
-                <p>DE BON</p>
-                <h1 style="margin-top: -5px">
-                  DESSERT<br />
-                  CAKE
-                </h1>
-                <hr class="vertical_hr" />
-              </div>
-              <img
-                class="mouseover_img"
-                src="../static/src/img7.jpg"
-                alt="케이크"
-              />
-            </div>
-          </div>
         </div>
+
         <hr />
         <div class="container-fluid bg-1">
           <div class="row">
@@ -158,7 +218,7 @@
     <script src="../static/js/footer.js"></script>
     <script
       class="script_api"
-      src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDjgzOCwqS88xhlO2-TjIyeeBdvbxroh70&callback=myMap"
     ></script>
   </body>
 </html>
