@@ -4,8 +4,8 @@ html {
 #Sub-header {
     position: relative;
     top: 100px;
-    left: 350px;
-    width: 1500px;
+    left: 150px;
+    width: 1800px;
     height: 50px;
 }
 #Sub-header li{
@@ -14,8 +14,8 @@ html {
 }
 #Sub-header li a {
     display: block;
-    width: 300px;
-    line-height: 50px;
+    width: 420px;
+    line-height: 40px;
     text-align: center;
     text-decoration: none;
     font-size: 16px;
