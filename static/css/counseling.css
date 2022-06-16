@@ -1,0 +1,71 @@
+#wrap {
+  overflow: hidden;
+  width: 100%;
+  min-width: 320px;
+  position: relative;
+} /* min-width 홈페이지 컨텐츠 가로값에 맞게 변경 */
+
+#visual {
+  width: 100%;
+  height: 550px;
+  position: relative;
+}
+.visual-img {
+  height: 550px;
+  background-size: cover !important;
+  transition: transform 3000ms ease-in-out;
+}
+
+.visual-img-wrap {
+  overflow: hidden;
+}
+
+#visual .visual-txt-con {
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  margin-left: -600px;
+  height: 100%;
+  letter-spacing: -0.5px;
+  color: #fff;
+  opacity: 0;
+  filter: Alpha(opacity=0);
+  top: -20px;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+  overflow: hidden;
+}
+#visual .visual-tit {
+  font-weight: 600;
+  font-size: 54px;
+  letter-spacing: -0.25px;
+  padding-top: 360px;
+  padding-bottom: 20px;
+  position: relative;
+  top: -20px;
+  opacity: 0;
+  filter: Alpha(opacity=0);
+  -webkit-transition: all 1.5s;
+  -moz-transition: all 1.5s;
+  -o-transition: all 1.5s;
+  transition: all 1.5s;
+}
+#visual .visual-sub-txt {
+  font-size: 16px;
+  letter-spacing: -0.5px;
+  opacity: 0.7;
+  filter: Alpha(opacity=70);
+}
+
+#visual.active .visual-txt-con {
+  top: 0;
+  opacity: 1;
+  filter: Alpha(opacity=100);
+}
+#visual.active .visual-tit {
+  top: 0;
+  opacity: 1;
+  filter: Alpha(opacity=100);
+}
