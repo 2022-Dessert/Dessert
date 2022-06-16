@@ -135,10 +135,68 @@
           </tr>
         </tbody>
       </table>
+
+      <table border="1">
+        <caption style="text-align: center margin-top: 10px">
+          Select Payment Method
+        </caption>
+        <caption>
+          Required input<span class="asterisk">*</span>
+        </caption>
+        <colgroup width="700px">
+          <col style="width: 18%" />
+          <col style="width: 82%" />
+        </colgroup>
+        <tbody>
+          <tr>
+            <td>Payment Method</td>
+            <td>
+              <label
+                ><input
+                  type="radio"
+                  name="deliverySite"
+                  value="userInfo"
+                  checked
+                />Existing Shipping Destination</label
+              >
+              <label
+                ><input type="radio" name="deliverySite" value="newInfo" />New
+                Payment Instruments</label
+              >
+
+              <button class="showAddr">
+                View MyPage <span class="leftAngle">></span>
+              </button>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Bank<span class="asterisk">*</span></td>
+            <td>
+              <select>
+                <option>Nonghyup Bank</option>
+                <option>Kakao Bank</option>
+                <option>Shinhan Bank</option>
+                <option>Kookmin Bank</option>
+              </select>
+              <span>-</span>
+              <input
+                type="text"
+                placeholder="333_______-________"
+                class="bank"
+              />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <button id="orderBtn" type="submit" onclick="Orderchecking();">
+        Payment completed
+      </button>
     </div>
     <section id="page-start"></section>
     <footer></footer>
     <script src="../static/js/header.js"></script>
     <script src="../static/js/footer.js"></script>
+    <script src="../static/js/deliver.js"></script>
   </body>
 </html>

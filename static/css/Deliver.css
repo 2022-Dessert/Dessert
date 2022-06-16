@@ -2,6 +2,10 @@ body {
   background-color: #f9f8ea;
 }
 
+caption {
+  font-size: 20px;
+  text-align: center;
+}
 .container {
   margin: 100px;
 }
@@ -35,9 +39,13 @@ td {
   width: 100;
 }
 
-table > caption:nth-child(1) {
+caption:nth-child(1) {
+  margin: 5px;
+}
+
+table {
   text-align: left;
-  margin: 10px 1.2vw;
+  margin-bottom: 50px;
 }
 
 table > caption:nth-child(2) {
@@ -87,6 +95,10 @@ table tr:nth-child(1) label:nth-child(2) {
   width: 50px;
 }
 
+.bank {
+  width: 170px;
+}
+
 td:nth-child(1) {
   background-color: rgb(195, 235, 150);
 }
@@ -114,4 +126,23 @@ textarea {
 input[type="text"] {
   border: 1px solid #c9c9c9;
   padding: 4px;
+}
+
+#orderBtn {
+  padding: 10px 20px;
+  background-color: white;
+  font-weight: bold;
+  color: black;
+  position: relative;
+  left: 80%;
+  display: inline-block;
+  letter-spacing: 0;
+  -webkit-transition: all 0.28s ease-in-out;
+  transition: all 0.28s ease-in-out;
+}
+
+#orderBtn:hover,
+#orderBtn:focus,
+#orderBtn:active {
+  letter-spacing: 5px;
 }
